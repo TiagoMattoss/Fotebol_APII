@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+//Esses parâmetros representam o tempo expandido da partida e o número de gols marcados pelas equipes da casa e visitante, respectivamente.
+//Esses parâmetros representam o tempo expandido da partida e o número de gols marcados pelas equipes da casa e visitante, respectivamente.
 Widget goalStat(int expandedTime, int homeGoal, int awayGoal) {
   var home = homeGoal;
   var away = awayGoal;

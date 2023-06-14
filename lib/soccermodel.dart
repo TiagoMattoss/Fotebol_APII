@@ -1,8 +1,5 @@
 class SoccerMatch {
-  //here we will see the different data
-  //you will find every thing you need in the doc
-  //I'm not going to use every data, just few ones
-
+//Cada classe possui um construtor que recebe os valores das propriedades e um método de fábrica fromJson que recebe um mapa de dados JSON.
   Fixture fixture;
   Team home;
   Team away;
@@ -18,7 +15,6 @@ class SoccerMatch {
   }
 }
 
-//here we will store the fixture
 class Fixture {
   int id;
   String date;
@@ -30,7 +26,6 @@ class Fixture {
   }
 }
 
-//here we will store the Status
 class Status {
   int elapsedTime;
   String long;
@@ -41,7 +36,6 @@ class Status {
   }
 }
 
-//here we will store the Team data
 class Team {
   int id;
   String name;
@@ -54,14 +48,11 @@ class Team {
   }
 }
 
-//here we will store the Goal data
 class Goal {
   int home;
   int away;
   Goal(this.home, this.away);
 
-  //Now we will create a factory method to copy the data from
-  // the json file
   factory Goal.fromJson(Map<String, dynamic> json) {
     return Goal(json['home'], json['away']);
   }

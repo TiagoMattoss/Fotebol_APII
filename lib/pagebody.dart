@@ -4,10 +4,16 @@ import 'matchtile.dart';
 import 'matchstat.dart';
 import 'soccermodel.dart';
 
+//Padding é usado para adicionar espaçamento interno (padding) ao conteúdo do widget filho.
+//Row é usado para organizar os widgets filhos horizontalmente, um ao lado do outro.
+//teamStat é um widget personalizado que exibe as estatísticas de uma equipe, como o nome e o logotipo.
+//goalStat é um widget personalizado que exibe as estatísticas de gol em uma partida de futebol.
+
 Widget PageBody(List<SoccerMatch> allmatches) {
   return Column(
     children: [
       Expanded(
+        // que ocupa todo o espaço disponível em seu pai.
         flex: 2,
         child: Container(
           child: Padding(
